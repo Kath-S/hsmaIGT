@@ -9,4 +9,15 @@ class Adress {
 
     static constraints = {
     }
+
+
+    @Override
+    public String toString() {
+        return "Adress{" +
+                "street='" + street + '\'' +
+                ", housenumber='" + housenumber + '\'' +
+                ", postcode='" + postcode + '\'' +
+                ", country='" + country + '\'' +
+                '}';
+    }
 }
