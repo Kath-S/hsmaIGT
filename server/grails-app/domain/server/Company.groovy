@@ -8,9 +8,12 @@ class Company {
     String postcode
     String country
 
-    static hasMany = [partners: Partner, cutsomers: Customer, warehouses: Warehouse]
+    static hasMany = [partners: Partner, customers: Customer, warehouses: Warehouse]
 
     static constraints = {
+        partners nullable: true
+        customers nullable: true
+        warehouses nullable: true
     }
 
 

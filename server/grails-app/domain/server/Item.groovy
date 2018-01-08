@@ -4,7 +4,7 @@ class Item {
 
     String producttype
     String name
-    static hasMany = [orders: Order]
+
 
 
     static constraints = {

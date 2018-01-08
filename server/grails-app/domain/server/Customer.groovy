@@ -4,8 +4,9 @@ class Customer {
 
     String firstname
     String lastname
-    static hasOne = [adress: Adress]
+    Adress  adresse
     static hasMany = [items: Item]
+    static belongsTo = [company: Company]
 
     static constraints = {
     }
