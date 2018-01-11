@@ -10,4 +10,5 @@ class CompanyController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
     static scaffold = Company
 
+
 }

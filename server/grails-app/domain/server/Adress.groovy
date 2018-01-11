@@ -6,10 +6,14 @@ class Adress {
     String housenumber
     String postcode
     String country
-    static belongsTo = [customer: Customer]
+    static belongsTo = [district: District]
 
     static constraints = {
-        customer(nullable:true)
+        street nullable: false
+        housenumber nullable: false
+        postcode nullable: false
+        country nullable: false
+        district nullable: true
     }
 
 

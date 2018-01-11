@@ -7,5 +7,9 @@ class Warehouse {
     static belongsTo = [company: Company]
 
     static constraints = {
+        name nullable: false, blank: false
+        districts nullable: true
+        company nullable: true
+
     }
 }

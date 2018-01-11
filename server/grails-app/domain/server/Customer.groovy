@@ -9,6 +9,11 @@ class Customer {
     static belongsTo = [company: Company]
 
     static constraints = {
+        firstname nullable: false, blank: false
+        lastname nullable: false, blank: false
+        adresse nullable: false
+        items nullable: true
+        company nullable: true
     }
 
     @Override
